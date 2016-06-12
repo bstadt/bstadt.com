@@ -1,3 +1,41 @@
+.navbar-default {
+	background-color:#000000;
+	border-top: 5px solid #ffcc00;
+}
+
+.navbar-button {
+	font-family: lato;
+	background-color: #000000;
+	color: #ffffff;
+	padding-top:2vh;
+	padding-bottom:2vh;
+	padding-left: 1.4vw;
+	padding-right: 1.4vw;
+	border:none;
+	border-bottom: 0px;
+	background:none;	
+    font-size: 1.4vh;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.navbar-button:hover {
+	background-color: #ffcc00;
+}
+
+.navbar-spacer {
+	background-color: #000000;
+	padding-left: 1vw;
+	padding-right: 2vw;
+	border:none;
+	background:none;	
+
+}
+
+
 @font-face {
 	font-family: fjallaOne;
 	src: url(../fonts/FjallaOne-Regular.otf);
