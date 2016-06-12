@@ -1,3 +1,12 @@
+@font-face {
+	font-family: fjallaOne;
+	src: url(../fonts/FjallaOne-Regular.otf);
+}
+
+@font-face {
+	font-family: lato;
+	src: url(../fonts/Lato-Medium.ttf);
+}
 body {
     width: 100%;
     height: 100%;
@@ -12,6 +21,7 @@ html {
 }
 
 .intro {
+	font-family: fjallaOne;
     display: table;
     width: 100%;
     height: 100%;
@@ -27,11 +37,19 @@ html {
 }
 
 .intro .intro-body {
+	font-family: fjallaOne;
     display: table-cell;
     vertical-align: middle;
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+	font-family: fjallaOne;
+	display: inline;
+    font-size: 5.4vw;
+	horizontal-align: middle;
 }
 
+.intro .intro-body .intro-text {
+	font-family: lato;
+    font-size: 1.7vw;
+}
