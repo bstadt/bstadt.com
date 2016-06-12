@@ -1,5 +1,11 @@
+$(document).ready(function(){
+    $(this).scrollTop(0);
+	$('#intro').fadeIn(1500);
+});
+
 // handle links with @href started with '#' only
 $(document).on('click', 'a[href^="#"]', function(e) {
+	$('#landing').fadeIn(2000);
     // target element id
     var id = $(this).attr('href');
 
