@@ -7,7 +7,7 @@
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="/static/js/bootstrap.min.js"></script>
 		<script src="/static/js/node_modules/jquery/dist/jquery.js"></script>
-		<script src="/static/js/scripts.js"></script>
+		<script src="/static/js/homeScripts.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
@@ -15,9 +15,15 @@
 			<div class="container">
 			</div>
 			<button class="navbar-spacer pull-right"></button>
-			<button type="button" class="navbar-button pull-right">CIRCUS</button>
-			<button type="button" class="navbar-button pull-right">HACKATHONS</button>
-			<button type="button" class="navbar-button pull-right">PROJECTS</button>
+			<form action="/circus" method="GET">
+				<button type="button" class="navbar-button pull-right">CIRCUS</button>
+			</form>
+			<form action="/hackathons" method="GET">
+				<button type="button" class="navbar-button pull-right">HACKATHONS</button>
+			</form>
+			<form action="/projects" method="GET">
+				<button type="button" class="navbar-button pull-right">PROJECTS</button>
+			</form>
 			<form action="/acrobatics" method="GET">
 				<button type="submit" class="navbar-button pull-right">ACROBATICS</button>
 			</form>
