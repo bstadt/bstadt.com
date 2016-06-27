@@ -1,6 +1,6 @@
 var words = $(".words");
 var i = -1;
-
+var first = true;
 function changeWord() {
     i++;
     words.eq(i%words.length).fadeIn(800).delay(1000).fadeOut(800, changeWord);
@@ -25,5 +25,8 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     e.preventDefault();
     var pos = $(id).offset().top;
     $('body, html').animate({scrollTop: pos}, 'slow');
-    changeWord();
+    if(first){
+        first=false;
+        changeWord();
+    }
 });

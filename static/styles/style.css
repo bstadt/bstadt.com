@@ -133,3 +133,15 @@ html {
     text-align: left;
     font-size: 10vw;
 }
+
+.landing .secHeading {
+    text-align: right;
+    text-decoration: underline;
+}
+
+.landing .secPar{
+    font-family: lato;
+    text-align: justify;
+    font-size: 1.1vw;
+}
+
