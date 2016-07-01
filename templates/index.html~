@@ -83,32 +83,19 @@
                     <p class='secPar'>If you are in need of a programmer, tumbling coach, web developer, or circus performer, please contact me using the info below!</p>
                 </div>
                 <div class="col-md-6">
-                    <h1>&nbsp;<h1>
-                    <div style="text-align: center;">
-                        <a class='cv' href='static/duderstadt_cv_v2.pdf'>
-                        <p class='cv' style='color: #000000'>Curriculum Vitae</p>
-                        </a>
-                        <a href='http://www.github.com/bstadt' target='_blank' style='visibility: hidden;'>
-                        <img src='static/images/github.png' class='icon'
-                            onmouseover = "this.src='static/images/github_active.png';"
-                            onmouseout= "this.src='static/images/github.png';">
-                        </a>
-                        <a href='http://www.devpost.com/bstadt' target='_blank' style='visibility: hidden;'>
-                        <img src='static/images/devpost.png' class='icon'
-                            onmouseover = "this.src='static/images/devpost_active.png';"
-                            onmouseout= "this.src='static/images/devpost.png';">
-                        </a>
-                        <a href='https://www.youtube.com/channel/UCAvXfJMAkDseImX62OkEvvw' target='_blank' style='visibility: hidden;'>
-                        <img src='static/images/youtube.png' class='icon'
-                            onmouseover = "this.src='static/images/youtube_active.png';"
-                            onmouseout= "this.src='static/images/youtube.png';">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
                     <div style="text-align: center;">
                         <h1>&nbsp;<h1>
                         <p class='contact'>Brandon Duderstadt<br><br>bduders1@jhu.edu<br><br>412.580.9568</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1>&nbsp;<h1>
+                    <h5>&nbsp;<h3>
+                    <div style="text-align: center;">
+                        <p class='cv'>Curriculum Vitae</p>
+                        <img src='static/images/github.png' class='icon'>
+                        <img src='static/images/devpost.png' class='icon'>
+                        <img src='static/images/youtube.png' class='icon'>
                     </div>
                 </div>
             </div>

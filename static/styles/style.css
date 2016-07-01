@@ -140,16 +140,34 @@ html {
 .landing .secPar{
     font-family: lato;
     text-align: justify;
-    font-size: 1.1vw;
+    font-size: large;
 }
 
 .landing .contact{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: xx-large;
 }
 
 .landing .icon{
+    visibility: visible;
     padding: 0.5vw;
     width: 60px;
     height: 60px;
+}
+
+.landing .icon:hover{
+   cursor: pointer;
+   cursor: hand;
+}
+.landing .cv {
+    visibility: visible;
+    text-align: center;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+.cv:hover {
+   text-decoration:underline; 
+   cursor: pointer;
+   cursor: hand;
 }
