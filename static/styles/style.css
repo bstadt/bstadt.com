@@ -2,6 +2,7 @@
 	background: transparent;
 	border-top: 5px solid #ffcc00;
 	position: absolute;
+	display: none;
 }
 
 .navbar-button {
