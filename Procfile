@@ -1,1 +1,1 @@
-python bstadt.py
+web: python app:app
