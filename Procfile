@@ -1,1 +1,1 @@
-web: python bstadt.py
+web: gunicorn app:app
