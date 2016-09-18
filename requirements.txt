@@ -35,7 +35,6 @@ ptyprocess==0.5.1
 pycurl==7.43.0
 Pygments==2.1.3
 pyparsing==2.1.8
-python-apt==1.1.0b1
 python-dateutil==2.5.3
 pytz==2016.6.1
 pyzmq==15.4.0
