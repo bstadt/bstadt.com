@@ -14,9 +14,6 @@
 			<form action="/circus" method="GET">
 				<button type="submit" class="navbar-button pull-right">CIRCUS</button>
 			</form>
-			<form action="/hackathons" method="GET">
-				<button type="submit" class="navbar-button pull-right">HACKATHONS</button>
-			</form>
 			<button type="button" class="navbar-button pull-right" style="background-color:#ffcc00">PROJECTS</button>
 			<form action="/acrobatics" method="GET">
 				<button type="submit" class="navbar-button pull-right" >ACROBATICS</button>
@@ -25,12 +22,97 @@
 				<button type="submit" class="navbar-button pull-right" >HOME</button>
 			</form>
 		</nav>
+
 		<header class="banner-short" id='intro' style='display: none'>
 			<div class='col-md-12'>
 				<h1 style='font-size:4vw;'>PROJECT PORTFOLIO</h1>
 			</div>
 		</header>
+
     <div id='body'style='display: none' class='landing'>
+			<div class="col-md-12">
+      <h1>&nbsp;<h1>
+      <div class="col-md-12">
+        <h1 class="landing secHeading">Bitcamp 2016</h1>
+      </div>
+      <div class="col-md-12">
+        <h6>&nbsp;</h6>
+        <p class="secPar">Bitcamp 2016 at the University of Maryland was one of the largest hackathon events in the history of Major League Hacking! My team decided to take on the Intel challenge for this competition, which was to create an internet of things device with Intel's Edison Module. Using the Edison Module and a webcam, our team created a 'smart lamp' named scribe that could take a picture of any notes writen under it and digitize them with an optical character recognition (OCR) algorithm. Since I am a huge fan of Machine Vision, I decided to challenge myself further and write the OCR from scratch. That, plus the fact that I had to build the Linux kernel the Edison was to run on from a bare bones yocto image, made for a busy weekend. By the end, I had been up for 65 hours straight, but we had a working project, so it was worth it. We ended up winning the Intel Grand Prize, and we all got to go home with brand new tablets, which was a big plus.</p>
+      </div>
+	      <div class="col-md-12">
+		      <div class="col-md-2">
+		      </div>
+		      <div class='col-md-3'>
+		        <h6>&nbsp;</h6>
+		        <iframe width="420" height="315" src="https://www.youtube.com/embed/3b6divQPHO0" frameborder="0" allowfullscreen></iframe>
+		      </div>
+		      <div class="col-md-2">
+		      </div>
+		      <div class='col-md-3'>
+		          <a class='cv' href='https://github.com/bstadt/scribe-bitcamp2016'>
+		          <h1 class='cv' style='color: #000000; font-size: 50px;'>Bitcamp 2016<br>Open Source<br>Here!<br></h1>
+		          </a>
+		      </div>
+		      <div class="col-md-2">
+		      </div>
+	      </div>
+    	</div>
+
+	    <div class="col-md-12" style='background-color: #ffcc00;'>
+	    	<h1>&nbsp;<h1>
+	      <div class="col-md-12">
+	        <h1 class="landing secHeading">MLH Prime 2016</h1>
+	      </div>
+	      <div class="col-md-12">
+	        <h6>&nbsp;</h6>
+	        <p class="secPar">MLH Prime 2016 was an invite only event that acted as the championships for the 2016 Hackathon Season. Competitors from all over the world traveled to New York City to compete in the event. Prime 2016 was held at Bell Labs, the birthplace of the transistor, the C programming language, and the Linux operating system. For the competition, my team decided to write and deploy a 'crowdsourced jukebox app' for the iPhone. We ended up placing 6th overall out of the 109 teams in attendance. Check out the video below for a snippet of our app pitch!</p>
+	      </div>
+	      <div class="col-md-4">
+	      </div>
+	      <div class="col-md-4">
+	        <h6>&nbsp;</h6>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/cBprT2GwF-0" frameborder="0" allowfullscreen></iframe>
+	      </div>
+	    </div>
+
+    <div class="col-md-12" style='background-color: #ffffff;'>
+      <h1>&nbsp;<h1>
+      <div class="col-md-12">
+        <h1 class="landing secHeading">HopHacks 2016</h1>
+      </div>
+      <div class="col-md-12">
+        <h6>&nbsp;</h6>
+        <p class="secPar">Hophacks 2016 was my first hackathon, and it still remains, by far, my favorite. My team decided to jump straight in to hardware hacking at this competition, and created a wearable assistive device for the blind. There were 4 main pieces of hardware involved in the project, namely, a custom 3-D printed arm mount, an Xbox kinect, a raspberry pi, and a myo arm band. I was responsible for most of the algorithmic parts of this project, so I began by writing a set of drivers to interpret the Kinect information, and send it to the Ras Pi. Then, I wrote a set of algorithms for the myo armband that would allow me to command it to pulse at a certain frequency, as well as report the orientation of the user's arm in space. With this information, I wrote the main algorithm on the ras pi, which would take in point cloud data from the kinect, and using a filter based on the orientation of the user's arm, scale that depth information to a frequency which would be reported to the user via a series of vibrations on their arm.</p>
+        <h6>&nbsp;</h6>
+        <p class="secPar">The trickiest part of this project, though, was the fact that the kinect and the myo had to both perform tasks nonstop, and exchange information with eachother at the same time. I did some research on distributed computing, and hacked together a way keep both devices running and exchanging information with a latency on the order of hundreths of a millisecond. By the end of the competition, we were able to navigate around the halls of our school while blindfolded using ouly our hack. We went on the win 3rd place overall, and the best hardware hack award, which allowed us to go home with over $1000 and some brand new ras pi 2.0s.</p>
+      </div>
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <a class='cv' href='https://github.com/bstadt/Touch-hophacks2016-'>
+        <h1 class='cv' style='color: #000000; font-size: 50px;'>HopHacks 2016<br>Open Source<br>Here!<br></h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-12" style='background-color: #ffcc00;'>
+      <h1>&nbsp;<h1>
+      <div class="col-md-12">
+        <h1 class="landing secHeading">Touch+</h1>
+      </div>
+      <div class="col-md-12">
+        <h6>&nbsp;</h6>
+        <p class="secPar">Touch+ is a stylish wearable that utilizes stereo vision and haptic feedback to assist the blind in navitgation. Touch+ was first developed at the Spring 2016 Johns Hopkins Hackathon, where it won 3rd place overall. After the hackathon, our team was approached by a couple of venture capitalists who wanted to give us a chance to pitch out idea to them. After spending countless hours rehersing our pitch and revising our slide deck, we took the dive and ended up securing $10,000 in funding from JH Tech Ventures and $1,000 in fuding from A-Level Capital. We have since been working alongside the National Federation for the Blind to create our beta prototype.</p>
+      </div>
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+          <h6>&nbsp;</h6>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/BBsYvs1kFII" frameborder="0" allowfullscreen></iframe>
+          <h1>&nbsp;</h1>
+      </div>
+    </div>
+
     <div class="col-md-12">
       <h1>&nbsp;<h1>
       <div class="col-md-12">
@@ -56,27 +138,8 @@
         </div>
       </div>
     </div>
-
-    <div class="col-md-12" style='background-color: #ffcc00;'>
-      <h1>&nbsp;<h1>
-      <div class="col-md-12">
-        <h1 class="landing secHeading">Touch+</h1>
-      </div>
-      <div class="col-md-12">
-        <h6>&nbsp;</h6>
-        <p class="secPar">Touch+ is a stylish wearable that utilizes stereo vision and haptic feedback to assist the blind in navitgation. Touch+ was first developed at the Spring 2016 Johns Hopkins Hackathon, where it won 3rd place overall. After the hackathon, our team was approached by a couple of venture capitalists who wanted to give us a chance to pitch out idea to them. After spending countless hours rehersing our pitch and revising our slide deck, we took the dive and ended up securing $10,000 in funding from JH Tech Ventures and $1,000 in fuding from A-Level Capital. We have since been working alongside the National Federation for the Blind to create our beta prototype.</p>
-      </div>
-      <div class="col-md-4">
-      </div>
-      <div class="col-md-4">
-          <h6>&nbsp;</h6>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/BBsYvs1kFII" frameborder="0" allowfullscreen></iframe>
-          <h1>&nbsp;</h1>
-      </div>
-    </div>
-
-    </div>
-	</body>
+  </div>
+</body>
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="/static/js/bootstrap.min.js"></script>
 		<script src="/static/js/node_modules/jquery/dist/jquery.js"></script>
