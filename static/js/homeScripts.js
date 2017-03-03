@@ -12,8 +12,8 @@ $(document).ready(function(){
 	$('#name').delay(1100).fadeIn(1000);
 	$('#tagline').delay(1100).fadeIn(1000);
 	$('#downArrow').delay(1100).fadeIn(1000);
-	$('#nav').delay(2100).fadeIn(1000);
 });
+
 $(window).resize(function(){
   if ($(window).width()<980){
     $('#about').hide();
@@ -22,6 +22,7 @@ $(window).resize(function(){
     $('#about').show();
   }
 });
+
 $(document).on('click', 'a[href^="#"]', function(e) {
 	$('#landing').fadeIn(2000);
     var id = $(this).attr('href');

@@ -7,107 +7,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <nav class="navbar-default navbar-fixed-top navbar-right" id="nav" style="display: none;">
-            <div class="container">
-            </div>
-            <button class="navbar-spacer pull-right"></button>
-            <form action="/circus" method="GET">
-                <button type="submit" class="navbar-button pull-right">CIRCUS</button>
-            </form>
-            <form action="/projects" method="GET">
-                <button type="submit" class="navbar-button pull-right">PROJECTS</button>
-            </form>
-            <form action="/acrobatics" method="GET">
-                <button type="submit" class="navbar-button pull-right">ACROBATICS</button>
-            </form>
-            <button type="button" class="navbar-button pull-right" style="background-color:#ffcc00">HOME</button>
-        </nav>
         <header class="intro" id="intro" style="display: none;">
+        <!--Navbar-->
+            <div>
+              <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox"/>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <a href="#"><li>Menu</li></a>
+                    <a href="#"><li>Items</li></a>
+                    <a href="#"><li>Here</li></a>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+          <!--Header-->
             <div class="intro-body">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="brand-heading" id="name" style="display: none">BRANDON DUDERSTADT</h1>
+                            <h1 class="brand-heading" id="name" style="display: none"></h1>
                             <h6>&nbsp;<h6>
-                            <h4 class="intro-text" id="tagline" style="display: none">LEARN. MAKE. PERFORM. EXPLORE.</h4>
+                            <h4 class="intro-text" id="tagline" style="display: none"></h4>
                             <h1>&nbsp;<h1>
                             <h2>&nbsp;<h2>
-                            <a href="#landing">
-                                <img src="static/images/downArrowInactive.png" id="downArrow" width="50" height="50" border="0" style="display: none;"
-                                 onmouseover = "this.src='static/images/downArrow.png';"
-                                 onmouseout= "this.src='static/images/downArrowInactive.png';">
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <div class = "landing" id="landing" style="display: none;">
-            <div class = "about col-md-6" id='about'>
-                <div style="text-align: center;">
-                            <h1>&nbsp;<h1>
-                            <h1>&nbsp;<h1>
-                            <h1>&nbsp;<h1>
-                    <p class='about'>A bit about<br>
-                    what I<br>
-                    do</p>
-                </div>
-            </div>
-            <div class ="col-md-6">
-                <div id=landingIntro class="col-md-12">
-                    <h1 style="text-align: center">I am<h1>
-                    <h1 class="words">a computer scientist</h1>
-                    <h1 class="words">a student</h1>
-                    <h1 class="words">an acrobat</h1>
-                    <h1 class="words">a pyromaniac</h1>
-                    <h1 class="words">a robotics enthusiast</h1>
-                    <h1 class="words">a hacker</h1>
-                    <h1 class="words">a wannabe photographer</h1>
-                    <h1 class="words">an adventure seeker</h1>
-                    <h1 style="text-align: center">living in Pittsburgh or Baltimore, depending on the day.</h1>
-                    <h1>&nbsp;<h1>
-                </div>
-                <div class="col-md-12">
-                  <p class="secPar">I am currently a student at Johns Hopkins University, double majoring in Computer Science and Applied Math, and minoring in robotics. My classwork focuses primarily on machine learning, data science, and statistics. Professionally, I have worked on projects for Carnegie Robotics, the U.S. Department of Defense, and the Human Connectome Project. When I'm not coding, I spend my time doing flips, spinning fire, and climbing things.</p>
-                <h3>&nbsp;<h3>
-                </div>
-                <div class="col-md-12">
-                  <p class='secPar'>If you are in need of a programmer, tumbling coach, or circus performer, please contact me using the info below!</p>
-                </div>
-                <div class="col-md-6">
-                    <h1>&nbsp;<h1>
-                    <div style="text-align: center;">
-                        <a class='cv' href='static/duderstadt_cv_v2.pdf'>
-                        <p class='cv' style='color: #000000'>Curriculum Vitae</p>
-                        </a>
-                        <a href='http://www.github.com/bstadt' target='_blank' style='visibility: hidden;'>
-                        <img src='static/images/github.png' class='icon'
-                            onmouseover = "this.src='static/images/github_active.png';"
-                            onmouseout= "this.src='static/images/github.png';">
-                        </a>
-                        <a href='http://www.devpost.com/bstadt' target='_blank' style='visibility: hidden;'>
-                        <img src='static/images/devpost.png' class='icon'
-                            onmouseover = "this.src='static/images/devpost_active.png';"
-                            onmouseout= "this.src='static/images/devpost.png';">
-                        </a>
-                        <a href='https://www.youtube.com/channel/UCAvXfJMAkDseImX62OkEvvw' target='_blank' style='visibility: hidden;'>
-                        <img src='static/images/youtube.png' class='icon'
-                            onmouseover = "this.src='static/images/youtube_active.png';"
-                            onmouseout= "this.src='static/images/youtube.png';">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div style="text-align: center;">
-                        <h1>&nbsp;<h1>
-                        <p class='contact'>Brandon Duderstadt<br><br>bduders1@jhu.edu<br><br>412.580.9568</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </body>
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="/static/js/bootstrap.min.js"></script>
-        <script src="/static/js/node_modules/jquery/dist/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/node_modules/jquery/dist/jquery.js"></script>
     <script src="/static/js/homeScripts.js"></script>
 </html>

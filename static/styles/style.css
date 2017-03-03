@@ -1,65 +1,14 @@
-.navbar-default{
-	background: transparent;
-	border-top: 5px solid #ffcc00;
-	position: absolute;
-}
-
-.navbar-button {
-	font-family: lato;
-	background-color: #000000;
-	color: #ffffff;
-	padding-top:2vh;
-	padding-bottom:2vh;
-	padding-left: 1.4vw;
-	padding-right: 1.4vw;
-	border:none;
-	border-bottom: 0px;
-	background:none;
-    font-size: 1.4vh;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-}
-
-.navbar-button:hover {
-	background-color: #ffcc00;
-}
-
-.navbar-spacer {
-	background-color: #000000;
-	padding-left: 1vw;
-	padding-right: 1.5vw;
-	border:none;
-	background:none;
-
-}
-
-
-@font-face {
-	font-family: fjallaOne;
-	src: url(../fonts/FjallaOne-Regular.otf);
-}
-
-@font-face {
-	font-family: lato;
-	src: url(../fonts/Lato-Medium.ttf);
-}
-
-body {
-	overflow-x:hidden;
-    width: 100;
-    height: 100%;
-}
-
 html {
     width: 100%;
     height: 100%;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+}
+
 .intro {
-		font-family: fjallaOne;
     display: table;
     width: 100%;
     height: 100%;
@@ -76,113 +25,141 @@ html {
 
 .intro .intro-body {
 	font-family: fjallaOne;
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .intro .intro-body .brand-heading {
 	font-family: fjallaOne;
 	display: inline;
-    font-size: 5.4vw;
+  font-size: 5.4vw;
 }
 
 .intro .intro-body .intro-text {
 	font-family: lato;
-    font-size: 1.6vw;
+  font-size: 1.6vw;
 }
 
-.landing {
-	width:100%;
-	height:100%;
-	font-family: fjallaOne;
-    padding: 0;
-    margin: 0;
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.landing .heading {
-	color = #000000;
-	font-family: fjallaOne;
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
 }
 
-.banner {
-	font-family: fjallaOne;
-    display: table;
-    width: 100%;
-    height: 100%;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../images/intro.png) no-repeat top center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #fff;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
 
-.banner-short {
-		font-family: fjallaOne;
-    display: table;
-    width: 100%;
-    height: 33%;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../images/banner-short.png) no-repeat center center scroll;
-		-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
 }
 
-.words{
-   display: none;
-   text-align: center;
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
 }
 
-
-.about {
-	background-color: #ffcc00;
-    height:100%;
-    font-family: fjallaOne;
-    text-align: center;
-    font-size: 7vw;
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
 }
 
-.landing .secHeading {
-    text-align: center;
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.landing .secPar{
-    font-family: lato;
-    text-align: justify;
-    font-size: large;
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
 }
 
-.landing .contact{
-    text-align: center;
-    font-size: xx-large;
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-.landing .icon{
-    visibility: visible;
-    padding: 0.5vw;
-    width: 60px;
-    height: 60px;
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+	color: #fff;
+	float:left;
+	clear:both;
 }
 
-.landing .icon:hover{
-   cursor: pointer;
-   cursor: hand;
-}
-.landing .cv {
-    visibility: visible;
-    text-align: center;
-    font-size: xx-large;
-    padding: 10px;
+#menu ul
+{
+	list-style: none;
 }
 
-.cv:hover {
-   text-decoration:underline;
-   cursor: pointer;
-   cursor: hand;
+#menu a
+{
+	display: block;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
 }
