@@ -1,31 +1,71 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
-      <link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
-      <link href="/static/css/style.css" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href='/static/css/bootstrap.min.css' rel='stylesheet' media='screen'>
+      <link href='/static/css/bootstrap-responsive.min.css' rel='stylesheet'>
+      <link href='/static/css/style.css' rel='stylesheet'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     </head>
 
     <body>
-      <header class="intro" id="intro">
-        <div class="intro-body", id="intro_body">
-          <div class="intro-body-text">
+
+      <header class='intro' id='intro'>
+        <div class='intro-body', id='intro_body'>
+          <div class='intro-body-text'>
             <p>BRANDON</p>
             <p>DUDERSTADT</p>
           </div>
-          <div class="intro-body-links">
-            <a><p>ABOUT</p></a>
+          <div class='intro-body-links'>
+            <a href='#about'><p>ABOUT</p></a>
             <p>/</p>
-            <a><p>PORTFOLIO</p></a>
+            <a href='#portfolio'><p>PORTFOLIO</p></a>
             <p>/</p>
             <a><p>CONTACT</p></a>
           </div>
         </div>
       </header>
+
+      <div class='about' id='about'>
+      </div>
+
+      <div id='portfolio'></div>
+
+      <div class='portfolio'>
+
+        <div class='portfolio-header-wrapper'>
+          <h1>PROJECT PORTFOLIO</h1>
+        </div>
+
+
+        <div class='col-md-3 col-sm-6 col-xs-12 portfolio-item' style='background-color:#2D3E50'>
+          <div class='portfolio-text'>
+            <h2>Ax=xB</h2>
+            <h2>CALIBRATION API</h2>
+            <hr></hr>
+            <p>The pmCalibrate API is an open source tool for calibrating wrist mounted cameras on robotic arms. It uses the Park and Martin method to find solutions to the Ax=xB kinematic system.</p>
+            <button onclick="location.href='https://www.github.com/bstadt/pmCalibrate'">CHECK IT OUT</button>
+          </div>
+        </div>
+
+        <div class='col-md-3 col-sm-6 col-xs-12 portfolio-item' style='background-color:#01C26E'>
+        </div>
+
+        <div class='col-md-3 col-sm-6 col-xs-12 portfolio-item' style='background-color:#F3C40F'>
+        </div>
+
+        <div class='col-md-3 col-sm-6 col-xs-12 portfolio-item' style='background-color:#E24C3F'>
+        </div>
+
+        <div class='col-md-3 col-sm-6 col-xs-12 portfolio-item' style='background-color:#8F44AB'>
+        </div>
+
+      </div>
+
     </body>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/node_modules/jquery/dist/jquery.js"></script>
-    <script src="/static/js/homeScripts.js"></script>
+
+    <script src='http://code.jquery.com/jquery-latest.js'></script>
+    <script src='/static/js/bootstrap.min.js'></script>
+    <script src='/static/js/node_modules/jquery/dist/jquery.js'></script>
+    <script src='/static/js/homeScripts.js'></script>
+
 </html>
