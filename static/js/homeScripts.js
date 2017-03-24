@@ -4,9 +4,8 @@ $(document).ready(function(){
   $("#intro_body").delay(1000).fadeIn(1000);
 
   $('.portfolio-item').each(function(i){
-    $(this).height($(this).width());
+    $(this).height($(this).width() * 1.3);
   });
-
 
   $(window).scroll( function(){
       $('.portfolio-item').each( function(i){
@@ -23,9 +22,8 @@ $(document).ready(function(){
 $(window).resize(function(){
   centerDivAtLoc(.5, .33, "#intro_body");
 
-
   $('.portfolio-item').each(function(i){
-    $(this).height($(this).width());
+    $(this).height($(this).width() * 1.3);
   });
 
 });

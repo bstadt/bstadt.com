@@ -114,7 +114,6 @@ body {
 }
 
 .portfolio-text h2 {
-  font-size: calc((3.5vw + 3vh)/3);
   font-family: aqua;
   color:#fff;
   text-align:center;
@@ -125,7 +124,6 @@ body {
 }
 
 .portfolio-text p {
-  font-size: calc((1vw + 1vh)/2);
   font-family: aqua;
   color:#fff;
   text-align:center;
@@ -141,10 +139,7 @@ body {
   color: #fff;
   background: rgba(0, 0, 0, 0);
   border: solid 3px #fff;
-  font-size: calc((3.5vw + 3vh)/4);
-
 }
-
 
 .tight {
   margin:0;
