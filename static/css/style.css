@@ -125,7 +125,7 @@ body {
 }
 
 .portfolio-text p {
-  font-size: calc((3.5vw + 3vh)/6);
+  font-size: calc((1vw + 1vh)/2);
   font-family: aqua;
   color:#fff;
   text-align:center;
