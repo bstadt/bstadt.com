@@ -4,7 +4,21 @@ $(document).ready(function(){
   $("#intro_body").delay(1000).fadeIn(1000);
 
   $('.portfolio-item').each(function(i){
-    $(this).height($(this).width() * 1.3);
+    //when we have a small device in landscape mode, keep the ratio
+    if($(window).width() < 768 && $(window).width() > $(window).height()){
+      $(this).height($(this).width() *$(window).height()/$(window).width());
+    }
+    //if the screen is extra wide
+    else if ($(window).width() > 1600){
+      $(this).height($(this).width());
+    }
+    //akward case before bootstrap medium kicks in
+    else if ($(window).width() > 1200 && $(window).width() < 1350){
+      $(this).height($(this).width() * 1.8);
+    }
+    else {
+      $(this).height($(this).width() * 1.5);
+    }
   });
 
   $(window).scroll( function(){
@@ -23,7 +37,21 @@ $(window).resize(function(){
   centerDivAtLoc(.5, .33, "#intro_body");
 
   $('.portfolio-item').each(function(i){
-    $(this).height($(this).width() * 1.3);
+    //when we have a small device in landscape mode, keep the ratio
+    if($(window).width() < 768 && $(window).width() > $(window).height()){
+      $(this).height($(this).width() *$(window).height()/$(window).width());
+    }
+    //if the screen is extra wide
+    else if ($(window).width() > 1600){
+      $(this).height($(this).width());
+    }
+    //akward case before bootstrap medium kicks in
+    else if ($(window).width() > 1200 && $(window).width() < 1350){
+      $(this).height($(this).width() * 1.8);
+    }
+    else {
+      $(this).height($(this).width() * 1.5);
+    }
   });
 
 });
