@@ -107,6 +107,10 @@ body {
   opacity:0;
 }
 
+.portfolio-item:hover {
+  cursor:pointer;
+}
+
 .portfioio-text {
   font-family: aqua;
   color:#fff;

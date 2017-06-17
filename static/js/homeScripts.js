@@ -16,8 +16,11 @@ $(document).ready(function(){
     else if ($(window).width() > 1200 && $(window).width() < 1350){
       $(this).height($(this).width() * 1.8);
     }
-    else {
-      $(this).height($(this).width() * 1.5);
+    else if ($(window).width() > 1000 && $(window).width() < 1200) {
+      $(this).height($(this).width());
+    }
+    else{
+      $(this).height($(this).width());
     }
   });
 
@@ -30,7 +33,6 @@ $(document).ready(function(){
         }
     });
   });
-
 });
 
 $(window).resize(function(){
@@ -46,14 +48,16 @@ $(window).resize(function(){
       $(this).height($(this).width());
     }
     //akward case before bootstrap medium kicks in
-    else if ($(window).width() > 1200 && $(window).width() < 1350){
+    else if ($(window).width() > 1000 && $(window).width() < 1450){
       $(this).height($(this).width() * 1.8);
     }
-    else {
-      $(this).height($(this).width() * 1.5);
+    else if ($(window).width() > 900 && $(window).width() < 1000) {
+      $(this).height($(this).width());
+    }
+    else{
+      $(this).height($(this).width());
     }
   });
-
 });
 
 $(document).on('click', 'a', function(event){
@@ -66,8 +70,8 @@ $(document).on('click', 'a', function(event){
 function centerDivAtLoc(xTarget, yTarget, elem) {
   var wHeight = $(window).height();
   var wWidth = $(window).width();
-  var dHeight = $(elem).height()
-  var dWidth = $(elem).width()
+  var dHeight = $(elem).height();
+  var dWidth = $(elem).width();
 
   var posY = (wHeight * yTarget) - (dHeight/2);
   var posX = (wWidth * xTarget) - (dWidth/2);
