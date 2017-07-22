@@ -169,3 +169,15 @@ body {
   margin:0;
   padding:0;
 }
+
+.contact-box {
+  font-family: aqua;
+  color: #000;
+  text-align: center;
+  font-size: calc((2.9vw + 2.5vh));
+  display:inline;
+  padding-top: calc((3.5vw + 3vh)/8);
+}
+
+.contact-box p {
+}
