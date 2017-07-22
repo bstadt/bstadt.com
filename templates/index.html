@@ -4,6 +4,7 @@
       <link href='/static/css/bootstrap.min.css' rel='stylesheet' media='screen'>
       <link href='/static/css/bootstrap-responsive.min.css' rel='stylesheet'>
       <link href='/static/css/style.css' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
       <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     </head>
 
@@ -18,29 +19,39 @@
           <div class='intro-body-links'>
             <a href='#about'><p>ABOUT</p></a>
             <p>/</p>
-            <a href='#portfolio'><p>PORTFOLIO</p></a>
+            <a href='#portfolio-anchor'><p>PORTFOLIO</p></a>
             <p>/</p>
             <a><p>CONTACT</p></a>
           </div>
         </div>
       </header>
 
-      <div class='about' id='about'>
-        <div class='col-lg-6 col-md-12 col-sm-12 col-xs-12 about-left'>
-          <img src="/static/images/backflipCrop.png" class='backflip-img'>
+      <div id='about'>
+        <div class='portfolio'>
+          <div class='portfolio-header-wrapper' style='padding-top: 30px;'>
+            <h1>ABOUT</h1>
+          </div>
+        <div class='portfolio'>
+
+        <div class='col-lg-6 col-md-6 about-left' id='about-left-id'>
+          <img class='about-image' height="250" width="270" src='../static/images/backflipCrop.png'></img>
+          <p style='padding-bottom: 30px;'> I am currently a student at Johns Hopkins University, majoring in Applied Math, and minoring in Compute Science. My research focuses primarily on Machine Learning, Machine Vision, and Computational Neuroscience. When I'm not coding, I spend my time doing flips, spinning fire, and climbing things.</p>
         </div>
 
-        <div class='col-lg-6 col-md-12 col-sm-12 col-xs-12 about-right'>
-          <p>hi</p>
+        <div class='col-lg-6  col-md-6 about-right'>
+          <h2 style='text-decoration: underline; font-family: aqua; font-size: xx-large; text-align: center;'><b>AFFILIATIONS</b></h2>
+          <img id='affiliations' src='../static/images/affiliations.png'/>
         </div>
+
+      <h2>&nbsp;</h2>
       </div>
 
-      <div id='portfolio'></div>
       <div class='portfolio'>
 
         <div class='portfolio-header-wrapper'>
-          <h1>PROJECT PORTFOLIO</h1>
+          <h1 id='portfolio-anchor'>PROJECT PORTFOLIO</h1>
         </div>
+
 
         <div class='col-lg-3 col-md-4 col-sm-6 col-xs-12 portfolio-item' style='background-color:rgb(91, 192, 230);' onclick='window.open("https://www.github.com/bstadt/pmCalibrate");'>
           <div class='portfolio-text'>
@@ -95,6 +106,7 @@
             <p>In 2015, I ran my high school robotics club out of my basement after the school refused to supply us with a room. Titan and M-Boy are the product of the team's hard work and dedication thorughout that season. They won the team 1st Prize at the 2015 Botball World Championships.
           </div>
         </div>
+
 
     </body>
 

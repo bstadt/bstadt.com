@@ -24,6 +24,34 @@ $(document).ready(function(){
     }
   });
 
+  //cases defining when to show project descriptions
+  $('.portfolio-text p').each(function(i){
+    if($(window).width() < 768 && $(window).width() > $(window).height()){
+      $(this).css('display', 'none')
+    }
+    //if the screen is extra wide
+    else if ($(window).width() > 1600){
+      $(this).css('display', 'block')
+    }
+    //akward case before bootstrap medium kicks in
+    else if ($(window).width() > 1000 && $(window).width() < 1450){
+      $(this).css('display', 'block')
+    }
+    else if ($(window).width() > 900 && $(window).width() < 1000) {
+      $(this).css('display', 'block')
+    }
+    else{
+      $(this).css('display', 'none')
+    }
+  });
+
+  var awidth = $('#affiliations').width();
+  var aheight = $('#affiliations').height();
+  var ratio = (aheight/awidth).toFixed(2);
+
+  $('#affiliations').width($('#about-left-id').width());
+  $('#affiliations').height($('#about-left-id').width() * ratio);
+
   $(window).scroll( function(){
       $('.portfolio-item').each( function(i){
         var topOfObject = $(this).offset().top;
@@ -33,6 +61,9 @@ $(document).ready(function(){
         }
     });
   });
+
+  var moreSoonWrapOffset = $('#moreSoonWrapper').height()/2;
+  $('#moreSoonText').css('margin-top', moreSoonWrapOffset);
 });
 
 $(window).resize(function(){
@@ -58,6 +89,13 @@ $(window).resize(function(){
       $(this).height($(this).width());
     }
   });
+
+  var awidth = $('#affiliations').width();
+  var aheight = $('#affiliations').height();
+  var ratio = (aheight/awidth).toFixed(2);
+
+  $('#affiliations').width($('#about-left-id').width());
+  $('#affiliations').height($('#about-left-id').width() * ratio);
 });
 
 $(document).on('click', 'a', function(event){
