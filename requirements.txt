@@ -25,7 +25,6 @@ nbconvert==4.2.0
 nbformat==4.1.0
 networkx==1.11
 notebook==4.2.2
-numpy==1.11.0
 pathlib2==2.1.0
 pexpect==4.2.1
 pickleshare==0.7.4
