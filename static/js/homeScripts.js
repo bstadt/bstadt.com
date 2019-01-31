@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   //get a new random walk and start the drawing process
-  $.get( "http://bstadt-walk-api.herokuapp.com/", { steps: "5000", geometric: "True" } ).done(
+  $.get( "https://bstadt-walk-api.herokuapp.com/", { steps: "5000", geometric: "True" } ).done(
     function(data){
       startWalk(JSON.parse(data)['locs']);
     }
