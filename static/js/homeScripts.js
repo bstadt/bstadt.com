@@ -12,9 +12,6 @@ $(document).ready(function(){
 
 function startWalk(walk) {
 
-  var n = walk.length;
-  end_of_intro_idx = 10;
-
   var canvas = document.getElementById("introCanvas");
 
   // Get the device pixel ratio, falling back to 1.
@@ -33,33 +30,34 @@ function startWalk(walk) {
 
   var ctx = canvas.getContext("2d");
 
-  //ctx.scale(dpr, dpr);
   ctx.beginPath();
-
-  start_point = walk[0];
-  ctx.moveTo(start_point[0] * canvas.width, start_point[1] * canvas.height);
-
-  for (i=1; i<end_of_intro_idx; i++){
-    next_point = walk[i];
-    ctx.lineTo(Math.floor(next_point[0] * canvas.width), Math.floor(next_point[1] * canvas.height));
-    ctx.moveTo(Math.floor(next_point[0] * canvas.width), Math.floor(next_point[1] * canvas.height));
-  }
-
-  ctx.stroke();
-
-  stepWalk(canvas, ctx, walk, end_of_intro_idx);
+  ctx.lineWidth = 2;
+  stepWalk(canvas, ctx, walk, 0);
 
 }
 
 
-function stepWalk(canvas, ctx, walk, i){
-  start_point = walk[i];
-  next_point = walk[i+1];
+function stepWalk(canvas, ctx, walk, t){
+  mid = Math.floor(walk.length/2);
 
-  ctx.moveTo(start_point[0] * canvas.width, start_point[1] * canvas.height);
-  ctx.lineTo(Math.floor(next_point[0] * canvas.width), Math.floor(next_point[1] * canvas.height));
+  forward_start_point = walk[mid + t];
+  forward_next_point = walk[mid+t+1];
+
+  rear_start_point = walk[mid - t];
+  rear_next_point = walk[mid-t-1];
+
+  ctx.moveTo(forward_start_point[0] * canvas.width, forward_start_point[1] * canvas.height);
+  ctx.lineTo(Math.floor(forward_next_point[0] * canvas.width), Math.floor(forward_next_point[1] * canvas.height));
+
+  ctx.moveTo(rear_start_point[0] * canvas.width, rear_start_point[1] * canvas.height);
+  ctx.lineTo(Math.floor(rear_next_point[0] * canvas.width), Math.floor(rear_next_point[1] * canvas.height));
   ctx.stroke();
-  setTimeout(stepWalk, 10, canvas, ctx, walk, i+1);
+
+  //if the next endpoint exists, draw to it
+  if(t < walk.length/2){
+    setTimeout(stepWalk, 10, canvas, ctx, walk, t+1);
+  }
+
 }
 
 

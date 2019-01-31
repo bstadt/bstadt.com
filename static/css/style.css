@@ -9,8 +9,9 @@ html {
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
     background-color: #fff;
 }
 
@@ -20,4 +21,42 @@ body {
   font-family: aqua;
   left: 50%;
   transform: translate(-50%, 0%);
+  text-align: center;
+}
+
+.intro-canvas {
+  width: 90%;
+  height: 100%;
+  display:block;
+  margin: 0 auto;
+  padding: 5px;
+  border: 3px solid black;
+}
+
+.intro-body-links{
+  position: absolute;
+  color:black;
+  font-family: aqua;
+  left: 50%;
+  transform: translate(-50%, 0%);
+	display: inline;
+  font-size: 16;
+}
+
+.intro-body-links p {
+  margin:0px;
+  padding:0px;
+	display: inline;
+}
+
+.intro-body-links a {
+  margin:0px;
+  padding:0px;
+	display: inline;
+  color: #000;
+  text-decoration: none;
+}
+
+.intro-body-links a:hover {
+  text-decoration: underline;
 }
