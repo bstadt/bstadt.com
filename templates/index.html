@@ -6,6 +6,15 @@
       <link href='/static/css/style.css' rel='stylesheet'>
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
       <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+      <script>
+      function about_on() {
+        document.getElementById("about-overlay").style.display = "block";
+      }
+      function about_off(){
+          document.getElementById("about-overlay").style.display = "none";
+      }
+      </script>
     </head>
 
     <body>
@@ -16,21 +25,24 @@
       </div>
 
       <div style="margin:5vh;">
-      <div>
-        
+      </div>
+
       <div class="row">
         <div class="col-12">
           <h2 class="title-text">BRANDON DUDERSTADT</h2>
           <div class='intro-body-links'>
-              <a href='#about'><p>ABOUT</p></a>
+              <a onclick="about_on()"><p>ABOUT</p></a>
               <p>/</p>
-              <a href='#portfolio'><p>PORTFOLIO</p></a>
+              <a><p>PORTFOLIO</p></a>
               <p>/</p>
               <a><p>CONTACT</p></a>
-            </div>
           </div>
         </div>
-      <div>
+      </div>
+
+      <div id="about-overlay" class="overlay" onclick="about_off()">
+        <h2 class='about-text'>ABOUT</h2>
+      </div>
 
     </body>
 
