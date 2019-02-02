@@ -13,6 +13,8 @@ body {
     height: 100vh;
     margin:0;
     background-color: #fff;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .title-text {
@@ -25,10 +27,22 @@ body {
 }
 
 .about-text {
-  position: absolute;
   color:black;
   font-family: aqua;
-  text-align: left;
+  text-align: center;
+}
+
+.about-body{
+  color:black;
+  font-family: aqua;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.about-body-wrapper{
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro-canvas {
@@ -66,6 +80,7 @@ body {
 
 .intro-body-links a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .overlay {
@@ -77,12 +92,16 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255,255,255,0.5); /* Black background with opacity */
+  background-color: rgba(255,255,255,0.95); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  overflow-y: scroll;
   cursor: pointer; /* Add a pointer on hover */
 }
 
 .overlay h2 {
   position: absolute;
   color: black;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-decoration: underline;
 }
