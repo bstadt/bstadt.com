@@ -15,6 +15,13 @@
           document.getElementById("about-overlay").style.display = "none";
       }
 
+      function portfolio_on() {
+        document.getElementById("portfolio-overlay").style.display = "block";
+      }
+      function portfolio_off(){
+          document.getElementById("portfolio-overlay").style.display = "none";
+      }
+
       function contact_on() {
         document.getElementById("contact-overlay").style.display = "block";
       }
@@ -41,7 +48,7 @@
           <div class='intro-body-links'>
               <a onclick="about_on()"><p>ABOUT</p></a>
               <p>/</p>
-              <a><p>PORTFOLIO</p></a>
+              <a onclick="portfolio_on()"><p>PORTFOLIO</p></a>
               <p>/</p>
               <a onclick="contact_on()"><p>CONTACT</p></a>
           </div>
@@ -73,6 +80,18 @@
         </div>
 
       </div>
+
+      <div id="portfolio-overlay" class="overlay" onclick="portfolio_off()">
+        <h2 class='overlay-title'>SELECTED WORK</h2>
+
+        <div style="margin:15vh;">
+        </div>
+
+        <div class="overlay-body-wrapper">
+          <h4 class='about-body'>UNDER CONSTRUCTION...</h3>
+        </div>
+      </div>
+
 
       <div id="contact-overlay" class="overlay" onclick="contact_off()">
         <h2 class='overlay-title'>CONTACT</h2>
